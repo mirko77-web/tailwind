@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sfondo e Bordo Personalizzati</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#1E40AF",
+                    secondary: "#FACC15",
+                    accent: "#F43F5E",
+                    background: "#E5E7EB",
+                    borderColor: "#9333EA"
+                }
+            }
+        }
+    }
+</script>
+
+<body class="flex flex-col items-center justify-center min-h-screen bg-background p-6">
+
+    <h1 class="text-3xl font-bold text-primary mb-6">Sfondo e Bordo Personalizzati</h1>
+
+    <div class="p-6 bg-secondary border-4 border-borderColor rounded-lg shadow-lg max-w-md text-center">
+        <h2 class="text-xl font-semibold text-primary">Card con Bordi Personalizzati</h2>
+        <p class="text-gray-700">Questa è una card con bordo viola e sfondo giallo.</p>
+    </div>
+
+    <div class="mt-6 p-4 bg-primary border-2 border-accent rounded-md text-white max-w-md text-center">
+        <h2 class="text-lg font-semibold">Secondo Elemento</h2>
+        <p>Bordo rosso e sfondo blu intenso!</p>
+    </div>
+
+</body>
+</html>
