@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizzazione Tailwind</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ff5733",
+                        secondary: "#2a9d8f",
+                        accent: "#f4a261"
+                    },
+                    fontFamily: {
+                        custom: ["Poppins", "sans-serif"]
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '144': '36rem'
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-primary text-white flex items-center justify-center min-h-screen font-custom">
+
+    <div class="container mx-auto p-12 bg-secondary rounded-lg shadow-lg text-center">
+        <h1 class="text-amber-950 text-4xl font-bold mb-6">Tema Personalizzato</h1>
+        <p class="text-blue-900 text-accent text-lg">Ora la pagina usa colori e font personalizzati! 🚀🎨</p>
+    </div>
+
+</body>
+</html>
