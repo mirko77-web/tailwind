@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo con Focus & Active</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <form class="bg-white p-6 rounded-lg shadow-md w-80">
+        <label class="block mb-2 text-gray-700">Nome:</label>
+        <input type="text" class="w-full p-2 border border-gray-300 rounded-md 
+            focus:border-blue-500 focus:ring-2 focus:ring-blue-300 
+            active:border-blue-700" placeholder="Inserisci il tuo nome">
+
+        <label class="block mt-4 mb-2 text-gray-700">Email:</label>
+        <input type="email" class="w-full p-2 border border-gray-300 rounded-md 
+            focus:border-green-500 focus:ring-2 focus:ring-green-300 
+            active:border-green-700" placeholder="Inserisci la tua email">
+
+        <button type="submit" class="mt-4 w-full bg-primary text-red-600 py-2 rounded-md 
+            hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 active:bg-blue-900">
+            Invia
+        </button>
+    </form>
+
+</body>
+
+</html>
