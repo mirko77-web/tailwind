@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componenti Custom con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .card {
+                @apply bg-white shadow-md rounded-lg overflow-hidden p-4 border border-gray-300;
+            }
+            .card-title {
+                @apply text-lg font-bold text-gray-800;
+            }
+            .card-content {
+                @apply text-gray-600;
+            }
+            .card-button {
+                @apply mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-300;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    
+    <div class="space-y-4">
+        <div class="card">
+            <h2 class="card-title">Titolo Card</h2>
+            <p class="card-content">card esempio 1</p>
+            <button class="card-button">Scopri di più</button>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">titolo card</h2>
+            <p class="card-content">card esempio 2</p>
+            <button class="card-button">Apri Dettagli</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
