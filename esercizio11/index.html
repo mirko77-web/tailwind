@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "media",
+            theme: {
+                extend: {
+                    colors: {
+                        lightBg: "#F3F4F6",
+                        darkBg: "#1E293B",
+                        lightText: "#1E293B",
+                        darkText: "#F3F4F6",
+                        primary: "#1E40AF",
+                        secondary: "#FACC15"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center bg-lightBg text-lightText dark:bg-darkBg dark:text-darkText p-6">
+
+    <h1 class="text-4xl font-bold text-primary dark:text-secondary mb-6">Dark Mode con Tailwind</h1>
+
+    <p class="text-lg mt-4">
+        Questa pagina cambia automaticamente stile in base alla modalità scura del sistema operativo!
+    </p>
+
+    <div class="mt-6 p-6 bg-secondary text-lightText border-4 border-primary rounded-lg shadow-lg max-w-md text-center dark:bg-primary dark:text-darkText dark:border-secondary">
+        <h2 class="text-xl font-semibold">Elemento Responsive alla Dark Mode</h2>
+        <p>Il colore dello sfondo e del bordo si adattano alla modalità scura.</p>
+    </div>
+
+</body>
+</html>
