@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1E40AF",
+                        secondary: "#FACC15"
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .btn {
+                @apply border p-2 rounded;
+            }
+            .btn-primary {
+                @apply btn text-white bg-primary hover:opacity-95 active:border-2;
+            }
+            .btn-secondary {
+                @apply btn text-white bg-secondary hover:opacity-95 active:border-2;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <div class="p-4">
+        <button class="btn-primary">Clicca qui</button>
+    </div>
+    <div class="p-4">
+        <button class="btn-secondary">Clicca qui</button>
+    </div>
+</body>
+
+</html>
