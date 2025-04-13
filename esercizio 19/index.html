@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerarchia di Stili con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Contenitore principale -->
+    <div class="flex flex-row gap-4 p-6 bg-white shadow-lg rounded-lg">
+        <!-- Colonna 1 -->
+        <div class="flex-1 bg-blue-500 text-white p-4 rounded-md text-center">
+            <h2 class="text-lg font-bold">Colonna 1</h2>
+            <p>Contenuto della prima colonna.</p>
+        </div>
+        <div class="flex-1 bg-red-600 text-white p-4 rounded-md text-center">
+            <h2 class="text-lg font-bold">Colonna 2</h2>
+            <p>Contenuto della seconda colonna.</p>
+        </div>
+        <div class="flex-1 bg-green-600 text-blue-700 p-4 rounded-md text-center">
+            <h2 class="text-lg font-bold">Colonna 3</h2>
+            <p>Contenuto della terza colonna.</p>
+        </div>
